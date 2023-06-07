@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birthday Gift</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="balloon-img1">
+      <img src="./balloon.png" alt="" />
+    </div>
+    <div class="balloon-img2">
+      <img src="./balloon.png" alt="" />
+    </div>
+    <section class="title">
+      <h1>
+        Happy Birthday <br />
+        To <br />
+        Ismail Hossain <br />
+        Our Beloved MD Sir
+      </h1>
+      <div class="imgWrapper">
+        <div id="img">
+          <img
+            src="./327071117_1229213734337026_217979718928529893_n.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- script -->
+    <script src="./main.js"></script>
+    <script src="confetti.js"></script>
+    <!-- Confetti  JS-->
+    <script>
+      // start
+
+      const start = () => {
+        setTimeout(function () {
+          confetti.start();
+        }, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+      };
+
+      //  Stop
+
+      const stop = () => {
+        setTimeout(function () {
+          confetti.stop();
+        }, 5000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+      };
+
+      start();
+      stop();
+    </script>
+  </body>
+</html>
